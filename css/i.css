@@ -1,0 +1,66 @@
+.view {
+  background: url("../img/img.jpg")no-repeat center center;
+  height: 40%;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+  background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+      background-color: #4285F4;
+  }
+}
+
+html,
+body,
+header
+{
+height: 100%;
+}
+html {
+font-size: 1rem;
+}
+.card{
+  flex-direction: row!important;
+}
+.card img{
+max-width:100%;
+width:100;
+
+}
+.avatar {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+  position: relative;
+  transition: all .4s ease;
+}
+.avatar:hover{
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  transform:rotate(360deg)
+}
+@include media-breakpoint-up(sm) {
+html {
+font-size: 1.2rem;
+}
+}
+
+@include media-breakpoint-up(md) {
+html {
+font-size: 1.4rem;
+}
+}
+
+@include media-breakpoint-up(lg) {
+html {
+font-size: 1.6rem;
+}
+}
