@@ -1,9 +1,15 @@
 # Typecho-TM
 一套非常不Material Design 的 Material Design 主题
 
-# 使用说明
+[示例地址](http://tm.theme.acg.vc)
 
-* 代码高亮
+[使用说明](https://blog.acg.vc/nichijou/Theme-TM.html)
+
+# 使用目录
+
+[代码高亮](#代码高亮)
+
+# 代码高亮
 
 在所需要高亮的代码块前后添加 `<pre><code class="language-语言">` 和 `</code></pre>`
 如下所示例
