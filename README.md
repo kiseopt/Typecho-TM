@@ -5,11 +5,15 @@
 
 [使用说明](https://blog.acg.vc/nichijou/Theme-TM.html)
 
-# 使用目录
-
+# 说明目录
+[版本兼容](#版本兼容)
 [代码高亮](#代码高亮)
 
-# 代码高亮
+## 版本兼容
+
+PHP > 5.4  Typecho >= 1.0
+
+## 代码高亮
 
 在所需要高亮的代码块前后添加 `<pre><code class="language-语言">` 和 `</code></pre>`
 如下所示例
