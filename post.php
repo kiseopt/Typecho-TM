@@ -18,6 +18,7 @@
     </article>
     </div>
     <?php $this->need('comments.php'); ?>
+
     </div><!-- end #main-->
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>

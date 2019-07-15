@@ -8,7 +8,7 @@
 
 <!-- Copyright -->
 
-    <div class="footer-copyright text-center py-3">&copy;2013-<?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>  All Rights Reserved | Theme by <a href="https:///blog.acg.vc" >Kiseopt</a> | Powered by Typecho 
+    <div class="footer-copyright text-center py-3">&copy;<?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>  All Rights Reserved | Theme by <a href="https:///blog.acg.vc" >Kiseopt</a> | Powered by Typecho 
 
 </div>
 
