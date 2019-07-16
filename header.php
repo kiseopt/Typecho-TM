@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/i.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('code/prism.css'); ?>">
-    <script type="text/javascript" src="<?php $this->options->themeUrl('js/page.js'); ?>"></script>
     <?php $this->header(); ?>
 <?// header("Strict-Transport-Security: max-age=63072000; includeSubdomains; preload"); ?>
 <!-- 启用HSTS -->

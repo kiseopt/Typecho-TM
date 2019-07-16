@@ -28,6 +28,8 @@
 
 <script type="text/javascript" src="<?php $this->options->themeUrl('code/prism.js'); ?>"></script>
 
+<script type="text/javascript" src="<?php $this->options->themeUrl('js/page.js'); ?>"></script>
+
 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 
 </body>
