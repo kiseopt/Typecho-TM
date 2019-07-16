@@ -5,6 +5,8 @@
 
 [使用说明](https://blog.acg.vc/nichijou/Theme-TM.html)
 
+[更新日志](https://blog.acg.vc/nichijou/TM-UP.html)
+
 # 目录
 [版本兼容](#版本兼容)
 
