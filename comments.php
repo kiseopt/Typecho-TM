@@ -37,15 +37,16 @@
                                                     $comments->alt(' comment-odd', ' comment-even');
                                                     echo $commentClass; 
                                                     ?>">
-                                                        <div  id="<?php $comments->theId(); ?>" class="row" >
+                                                        <div  id="<?php $comments->theId(); ?>" class="row" style= "height:auto width:100% flex-wrap: wrap;"  >
                                                             <div class="">
-                                                                <?php $comments->gravatar('50', ''); ?>
+                                                                <?php $comments->gravatar('40', ''); ?>
                                                             </div>
                                                             <div class="col ">
                                                                 <cite class="font-weight-bold text-uppercase"><a ><?php $comments->author(); ?></a></cite> <a><?php $comments->date("发表于Y-m-d"); ?></a> <?php $comments->reply(); ?> <br>
                                                                 <?php $comments->content(); ?>
                                                             </div>
                                                         </div>
+                                                        
                                                         <?php if ($comments->children) { ?>
                                                         <div class="comment-children">
                                                             <?php $comments->threadedComments($options); ?>
@@ -59,7 +60,7 @@
                                     <?php } ?>
                     </div>
 
-        <div id="<?php $this->respondId(); ?>" class="respond">
+        <div id="<?php $this->respondId(); ?>" class="respond" style="width: 100%" >
                     <div class="cancel-comment-reply">
                         <?php $comments->cancelReply(); ?>
                     </div>
@@ -76,7 +77,6 @@
                                         <input type="email" name="mail" id="mail"value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> type="text" class="form-control" placeholder="邮箱">
                                         <input type="url" name="url" id="url"  placeholder="<?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> class="form-control" placeholder="个人网站">
                                 </div>
-
                             <?php endif; ?>
                             <div class="md-form input-group mb-3">
                                 <input type="text" class="form-control" name="text" id="textarea"  required><?php $this->remember('text'); ?>

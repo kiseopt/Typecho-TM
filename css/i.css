@@ -47,6 +47,7 @@ width:100;
   -moz-transform:rotate(360deg);
   transform:rotate(360deg)
 }
+
 @include media-breakpoint-up(sm) {
 html {
 font-size: 1.2rem;
