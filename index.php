@@ -2,94 +2,79 @@
 
 /**
 
- * 一套并不 Material Design 的 Material Design 主题
- * 主题代码高亮等使用说明请参见 blog.acg.vc/nichijou/Theme-TM.html  
- * 主题示例参见 tm.theme.acg.vc
- * 
- * @package TM 
- * @author Kiseopt
- * @version 1.0.7
- * @link http://blog.acg.vc
- */
+* 一套并不 Material Design 的 Material Design 主题
+* 主题代码高亮等使用说明请参见 blog.acg.vc/nichijou/Theme-TM.html  
+* 主题示例参见 tm.theme.acg.vc
+* 
+* @package TM 
+* @author Kiseopt
+* @version 1.0.7
+* @link http://blog.acg.vc
+*/
 
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+$this->need('header.php');
+?>
 
- $this->need('header.php');
+<div class="container" >
 
- ?>
+  <div class="row" >
 
-        <div class="container" >
+    <div class=" col-md-9">
 
-        <div class="row" >
+      <?php while ($this->next()) : ?>
 
-        <div class=" col-md-9">
+      <div  style="word-break: break-all; height:auto; max-width：100%"  class="row  hoverable mt-4 card">
 
-            <?php while ($this->next()) : ?>
+        <div class=""style="width: 100%;">
 
-            <div  style="word-break: break-all; height:auto; max-width：100%"  class="row  hoverable mt-4 card">
+          <div class="card-body">
 
-            <div class=""style="width: 100%;">
+            <div class="text-muted">
 
-                        <div class="card-body">
+              <h5 class="card-title text-center"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h5>
 
-                        <div class="text-muted">
+              <h6 class="card-subtitle mb-2 ">时间:<?php $this->date('F j, Y'); ?> | 分类:<?php $this->category(','); ?></h6>
 
-                          <h5 class="card-title text-center"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h5>
+            </div>
 
-                          <h6 class="card-subtitle mb-2 ">时间:<?php $this->date('F j, Y'); ?> | 分类:<?php $this->category(','); ?></h6>
+            <p class="card-text">
 
-                          </div>
+            <?php $this->content('<div class="text-center">- 阅读剩余部分 -</div>'); ?> </p>
 
-                          <p class="card-text">
+          </div>
 
-                          <?php $this->content('<div class="text-center">- 阅读剩余部分 -</div>'); ?> </p>
+        </div>
 
-                        </div>
+      </div>
 
-                    </div>
+    <?php endwhile; ?>
 
-                </div>
+    <div class="row mt-3">
 
-                <?php endwhile; ?>
+      <nav id='page233' >
+              <?php $this->pageNav(
+              '&laquo;',
+              '&raquo;',
+              '5',
+              '···',
+              array(
+              'wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue',
+              'itemTag' => 'li', 'textTag' => 'a',
+              'currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ',
+              'nextClass' => 'page-item',
+              )
+              ); ?>
+      </nav>
 
-                <div class="row mt-3">
+    </div>
 
-                    <nav id='page233' >
+  </div>
 
-                    <?php $this->pageNav(
+  <?php $this->need('sidebar.php'); ?>
 
-                      '&laquo;',
+  <script type="text/javascript" src="<?php $this->options->themeUrl('js/index.js'); ?>"></script>
 
-                      '&raquo;',
-
-                      '5',
-
-                      '···',
-
-                      array(
-
-                        'wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue',
-
-                        'itemTag' => 'li', 'textTag' => 'a',
-
-                        'currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ',
-
-                        'nextClass' => 'page-item',
-
-                      )
-
-                    ); ?>
-
-                      </nav>
-
-                </div>
-
-                </div>
-
-                <?php $this->need('sidebar.php'); ?>
-
-                <script type="text/javascript" src="<?php $this->options->themeUrl('js/index.js'); ?>"></script>
-
-<?php $this->need('footer.php'); ?>
+  <?php $this->need('footer.php'); ?>
 
