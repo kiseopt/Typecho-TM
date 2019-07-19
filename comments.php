@@ -11,21 +11,8 @@
 <?php $comments->listComments(); ?>
     <!--评论分页-->
     <div class="row mt-3">
-    <nav id='page233' >
-<?php $comments->pageNav(
-                      '&laquo;',
-                      '&raquo;',
-                      '5',
-                      '···',
-                      array(
-                        'wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue',
-                        'itemTag' => 'li', 'textTag' => 'a',
-                        'currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ',
-                        'nextClass' => 'page-item',
-                      )
-                    ); ?> 
-</nav>
-</div> 
+    <nav id='page233' ><?php $comments->pageNav('&laquo;','&raquo;','5','···',array('wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue','itemTag' => 'li', 'textTag' => 'a','currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ','nextClass' => 'page-item',)); ?> </nav>
+    </div> 
 <?php endif; ?>
                     <div>
                                     <?php function threadedComments($comments, $options) {
