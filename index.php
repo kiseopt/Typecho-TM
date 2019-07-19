@@ -53,28 +53,10 @@ $this->need('header.php');
 
     <div class="row mt-3">
 
-      <nav id='page233' >
-              <?php $this->pageNav(
-              '&laquo;',
-              '&raquo;',
-              '5',
-              '···',
-              array(
-              'wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue',
-              'itemTag' => 'li', 'textTag' => 'a',
-              'currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ',
-              'nextClass' => 'page-item',
-              )
-              ); ?>
-      </nav>
-
+<nav id='page233' ><?php $this->pageNav('&laquo;','&raquo;','5','···',array('wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue','itemTag' => 'li', 'textTag' => 'a','currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ','nextClass' => 'page-item',)); ?></nav>
     </div>
-
   </div>
-
   <?php $this->need('sidebar.php'); ?>
-
   <script type="text/javascript" src="<?php $this->options->themeUrl('js/index.js'); ?>"></script>
-
   <?php $this->need('footer.php'); ?>
 
