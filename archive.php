@@ -33,22 +33,10 @@
         <?php endif; ?>
 
         <div class="row mt-3">
-                    <nav id='page233' >
-                    <?php $this->pageNav(
-                      '&laquo;',
-                      '&raquo;',
-                      '5',
-                      '···',
-                      array(
-                        'wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue',
-                        'itemTag' => 'li', 'textTag' => 'a',
-                        'currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ',
-                        'nextClass' => 'page-item',
-                      )
-                    ); ?>
-                      </nav>
+                    <nav id='page233' ><?php $this->pageNav('&laquo;','&raquo;','5','···',array('wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue','itemTag' => 'li', 'textTag' => 'a','currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ','nextClass' => 'page-item',)); ?></nav>
                 </div>
     </div><!-- end #main -->
+
     <?php $this->need('sidebar.php'); ?>
 
 	<?php $this->need('footer.php'); ?>
