@@ -3,10 +3,8 @@
   <!--显示评论总条数-->
   <h6  class="card-subtitle mb-2 text-muted"><i class="fas fa-comment"></i> 既然来了，那就试着讨论一下吧~，现在<?php $this->commentsNum(_t('还没有评论噢'), _t('已有一条评论哒,不如试着加入讨论?'), _t('有 %d 条评论啦~不如试着加入讨论?')); ?></h6>
   <br>
-
   <?php $this->comments()->to($comments); ?>
 <?php if ($comments->have()): ?><!--如果有评论的才会输出-->
- 
     <!--输出评论列表-->
 <?php $comments->listComments(); ?>
     <!--评论分页-->
