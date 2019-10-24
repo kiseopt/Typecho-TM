@@ -7,8 +7,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title><?php $this->options->title(); ?><?php $this->archiveTitle(); ?></title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap.min.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/mdb.min.css'); ?>">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/mdbootstrap/4.8.10/css/mdb.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('code/prism.css'); ?>">
     <?php $this->header(); ?>
 <?// header("Strict-Transport-Security: max-age=63072000; includeSubdomains; preload"); ?>
