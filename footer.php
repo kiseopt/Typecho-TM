@@ -12,6 +12,8 @@
 <script type="text/javascript" src="<?php $this->options->themeUrl('js/i.js'); ?>"></script>
 <script type="text/javascript" src="<?php $this->options->themeUrl('code/prism.js'); ?>"></script>
 <script type="text/javascript" src="<?php $this->options->themeUrl('js/page.js'); ?>"></script>
+<link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+<link rel="stylesheet" href="<?php $this->options->themeUrl('css/i.css'); ?>">
 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 </body>
 </html>

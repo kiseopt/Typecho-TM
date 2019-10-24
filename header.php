@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/mdb.min.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/i.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('code/prism.css'); ?>">
     <?php $this->header(); ?>
 <?// header("Strict-Transport-Security: max-age=63072000; includeSubdomains; preload"); ?>
