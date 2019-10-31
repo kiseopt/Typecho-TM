@@ -15,7 +15,6 @@
     	<?php while($this->next()): ?>
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
             <div  style="word-break: break-all;  max-width：100%"  style="width: 100%;" class="row mt-4 hoverable card">
-
                     <div style="width: 100%;" class="card-body ">
             	        <h5 class="card-title text-center post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h5>
                         <h6  class="card-subtitle mb-2 text-muted"><?php _e('时间: '); ?> <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time> | <?php _e('分类: '); ?><?php $this->category(','); ?> </h6>
@@ -31,12 +30,9 @@
                 <h2 class="post-title mt-4" ><?php _e('404040404040404'); ?></h2>
             </article>
         <?php endif; ?>
-
         <div class="row mt-3">
                     <nav id='page233' ><?php $this->pageNav('&laquo;','&raquo;','5','···',array('wrapTag' => 'ul', 'wrapClass' => 'pagination pg-blue','itemTag' => 'li', 'textTag' => 'a','currentClass' => 'page-item active', 'itemClass' => 'page-item', 'prevClass' => 'page-item ','nextClass' => 'page-item',)); ?></nav>
                 </div>
     </div><!-- end #main -->
-
     <?php $this->need('sidebar.php'); ?>
-
 	<?php $this->need('footer.php'); ?>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="cmn-Hans">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,14 +29,12 @@
               <?php $this->widget('Widget_Contents_Page_List')
                 ->parse('<li class="nav-item" ><a class="nav-link" href="{permalink}">{title}</a></li>'); ?>
         </ul>
-
           <form class="form-inline ml-auto" id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
               <div class="md-form my-0">
               <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
                <input class="form-control mr-sm-2" type="text" id="s" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" aria-label="Search" style=" height: 0.8em; ">
               </div>
             </form>
-
         </div>
       </nav>
       <div class="view intro-2 z-depth-1" style="">

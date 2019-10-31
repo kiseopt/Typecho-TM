@@ -22,11 +22,8 @@
                                                 $commentClass .= ' comment-by-user';
                                             }
                                         }
-                                    
                                         $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
                                     ?>
-                    
-                                    
                                                     <li id="li-<?php $comments->theId(); ?>" style="list-style:none;" class=" comment-body<?php 
                                                     if ($comments->_levels > 0) {
                                                         echo ' comment-child';
@@ -46,20 +43,14 @@
                                                                 <?php $comments->content(); ?>
                                                             </div>
                                                         </div>
-                                                        
                                                         <?php if ($comments->children) { ?>
                                                         <div class="comment-children">
                                                             <?php $comments->threadedComments($options); ?>
                                                         </div>
-                                                
                                                         <?php } ?>
                                                     </li>
-
-                                    
-                        
                                     <?php } ?>
                     </div>
-
         <div id="<?php $this->respondId(); ?>" class="respond" style="width: 100%" >
                     <div class="cancel-comment-reply">
                         <?php $comments->cancelReply(); ?>
