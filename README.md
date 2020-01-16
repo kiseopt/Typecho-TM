@@ -47,9 +47,15 @@ PHP > 5.4  Typecho >= 1.0
 # 浏览器兼容性
 
 Chrome : 兼容
+
 Firefox : 兼容
+
 Edge(Chromium) : 兼容
+
 Edge(EDGE) : 不兼容(底栏错误，由于 Edge 即将更新基于 Chromium 的版本因此旧版不做兼容性修补)
+
 Safar:兼容
+
 Nintendo 3DS(2012) : 部分兼容(翻页按钮无CSS)
+
 Kindle (2018):部分兼容(翻页按钮无CSS)
