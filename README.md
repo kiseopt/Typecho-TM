@@ -56,6 +56,6 @@ Edge(EDGE) : 不兼容(底栏错误，由于 Edge 即将更新基于 Chromium �
 
 Safar:兼容
 
-Nintendo 3DS(2012) : 部分兼容(翻页按钮无CSS)
+Nintendo 3DS/XL/2DS(2012) : 部分兼容(翻页按钮无CSS)
 
-Kindle (2018):部分兼容(翻页按钮无CSS)
+Kindle (第八代):部分兼容(翻页按钮无CSS)
